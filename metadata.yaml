@@ -1,0 +1,5 @@
+homepage: "https://www.www.tracknow.io"
+documentation: "https://help.tracknow.io/knowledge-base/google-tag-manager-gtm-for-postback-tracking/"
+versions:
+  - sha: 9533a1085726156f3a75359015be5a99a85ef982
+    changeNotes: Initial release.
