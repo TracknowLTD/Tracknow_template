@@ -78,10 +78,10 @@ const log = require('logToConsole');
   
   const sendPixel = require('sendPixel');
   // Extract the necessary fields from the data object
-  const trackingURL = data.TrackingURL;
-  const campaignId = data.CampaignId;
-  const orderId = data.OrderId;
-  const orderAmount = data.OrderAmount;
+  const trackingURL = encodeURIComponent(data.TrackingURL);
+  const campaignId = encodeURIComponent(data.CampaignId);
+  const orderId = encodeURIComponent(data.OrderId);
+  const orderAmount = encodeURIComponent(data.OrderAmount);
 
   // Construct the pixel URL
  // const pixelURL = 'https://' + trackingURL + '/success.jpg?campaign_id=' + campaignId + '&order_id=' + orderId + '&amount=' + orderAmount;
